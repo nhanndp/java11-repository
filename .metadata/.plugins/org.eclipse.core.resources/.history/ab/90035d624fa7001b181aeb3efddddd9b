@@ -1,0 +1,22 @@
+package homework;
+
+public class Ex05 {
+	// Viết chương trình tìm số nguyên tố thứ 200 trong hệ thống số tự nhiên.
+
+	public static void main(String[] args) {
+		int[] prime = new int[200];
+	}
+
+	private static boolean isPrimeNumber(int [] prime) {
+		if (prime <= 2) {
+			return true;
+		} else {
+			for (int i =2; i <= n; i++) {
+				if(n % i == 0) {
+					return false;
+				}
+			}
+		}
+		return false;
+	}
+}
