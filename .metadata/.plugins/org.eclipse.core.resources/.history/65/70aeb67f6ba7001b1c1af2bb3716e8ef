@@ -1,0 +1,44 @@
+package bean;
+
+public class Rectangle {
+
+	// attributes
+	private int width;
+	private int height;
+
+	// default: empty constructor
+	public Rectangle() {
+
+	}
+
+	// constructor with 2 parameters
+	public Rectangle(int width, int height) { // convention: use same words as attributes.
+		// gán giá trị trong hàm Rectangle(int width, int height) cho atributes
+		this.width = width;
+		this.height = height;
+	}
+	
+	//setter
+	public void setWidth(int width) { 
+		this.width = width; //không bỏ this được vì tên biến truyền vào đang trùng
+	}
+	
+	//getter
+	public int getWidth() {
+		return width; // không cần this. vẫn được vì ko có biến truyền vào
+	}
+	
+	public void setHeight(int height) {
+		this.height = height;
+	}
+	
+	public int getHeight() {
+		return height;
+	}
+
+	@Override
+	public String toString() {
+		return "w" + this.width + " h" + this.height;
+	}
+
+}

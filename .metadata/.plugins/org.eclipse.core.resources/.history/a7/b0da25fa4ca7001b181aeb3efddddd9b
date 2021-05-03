@@ -1,0 +1,8 @@
+package homework;
+
+public class Ex05 {
+	//Viết chương trình tìm số nguyên tố thứ 200 trong hệ thống số tự nhiên.
+public static void main(String[] args) {
+	
+}
+}
