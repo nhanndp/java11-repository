@@ -1,0 +1,9 @@
+package homework;
+
+public class test {
+public static void main(String[] args) {
+	int[] number = {4,7,12,18};
+	long[] factOfNumber = new long[4];
+	
+}
+}

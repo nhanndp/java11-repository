@@ -1,0 +1,31 @@
+package exercises;
+
+import java.util.Random;
+
+public class Ex02RandomPass {
+	private static String USERNAME = "admin";
+	private static String PASSWORD = "237";
+
+	public static void main(String[] args) {
+		Random rd = new Random();
+		String text = null;
+		int breakLine = 1;
+
+		do {
+			text = "" + rd.nextInt(10) + rd.nextInt(10) + rd.nextInt(10);
+			System.out.println(text + " ");
+			if (breakLine % 13 == 0) {
+				System.out.println();
+			}
+			breakLine++;
+		} while (!login("admin", text));
+		System.out.println("\n==== Login successfully!!! ====");
+		System.out.println("USER: admin");
+		System.out.println("PASS: " + text);
+	}
+
+	private static boolean login(String ipUN, String ipPW) {
+		return ipUN.equals(USERNAME) && ipPW.equals(PASSWORD);
+	}
+
+}
